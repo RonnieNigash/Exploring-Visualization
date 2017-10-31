@@ -58,7 +58,7 @@
             .attr("class", "graticule")
             .attr("d", path);
 
-        d3.csv("world-50m.json", function (error, world) {
+        d3.json("world-50m.json", function (error, world) {
             if (error) throw error;
 
             svg.insert("path", ".graticule")
